@@ -1,6 +1,6 @@
 'use strict';
 
-var FizzBuzz = (function() { // IIFE
+module.exports = (function() { // IIFE
 
   var Fizzbuzz = function(newFizz, newBuzz) { // the constructor!
     this.result = [];
@@ -23,7 +23,6 @@ var FizzBuzz = (function() { // IIFE
         this.result.push(i);
       }
     }
-    console.log(this.result); // For debugging
   };
 
   Fizzbuzz.prototype.output = function() {
@@ -33,5 +32,4 @@ var FizzBuzz = (function() { // IIFE
   return Fizzbuzz;
 }());
 
-
-
+module.exports = FizzBuzz;
