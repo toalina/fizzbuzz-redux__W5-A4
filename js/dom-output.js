@@ -9,6 +9,7 @@ document.getElementById("submit").addEventListener("click", function(e) {
   var endVal = Number(document.getElementById("endVal").value);
   fizzbuzz.input(startVal, endVal);
   fizzbuzz.output();
+
   console.log(startVal);
   console.log(endVal);
   document.getElementById("startVal").value = "";

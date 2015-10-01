@@ -8,8 +8,8 @@ var FizzBuzz = (function() { // IIFE
     this.newBuzz = newBuzz || "Buzz";
   };
 
-  Fizzbuzz.prototype.input = function(startNum, endNum) {
-    for (var i = startNum; i <= endNum; i++) {
+  Fizzbuzz.prototype.input = function(min, max) {
+    for (var i = min; i <= max; i++) {
       if (i % 3 === 0 && i % 5 === 0) {
         this.result.push(this.newFizz + this.newBuzz);
       }
@@ -26,24 +26,9 @@ var FizzBuzz = (function() { // IIFE
     console.log(this.result); // For debugging
   };
 
-  Fizzbuzz.prototype.output = function () {
-    document.getElementById("output").innerHTML = "";
-    var startVal = Number(document.getElementById("startVal").value);
-    var endVal = Number(document.getElementById("endVal").value);
-
-    document.getElementById("start").innerHTML = startVal;
-    document.getElementById("end").innerHTML = endVal;
-
-    // createElement
-    for (var i = 0; i < this.result.length; i++) {
-      var p = document.createElement("p");
-      var text = this.result[i];
-      var att = document.createAttribute("class"); // Add class attribute
-      p.appendChild(document.createTextNode(text));
-      att.value = text; // Specify what class name to attach
-      p.setAttributeNode(att);
-      document.getElementById("output").appendChild(p);
-    }
+  Fizzbuzz.prototype.output = function() {
+    console.log(this.result);
+    return this.result;
   };
   return Fizzbuzz;
 }());
