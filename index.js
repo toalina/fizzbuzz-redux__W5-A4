@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = (function() { // IIFE
+var FizzBuzz = (function() { // IIFE
 
   var Fizzbuzz = function(newFizz, newBuzz) { // the constructor!
     this.result = [];
