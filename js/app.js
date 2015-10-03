@@ -36,25 +36,3 @@ document.getElementById("submit").addEventListener("click", function(e) {
   document.getElementById("endVal").value = "";
 });
 
-// From dom-output.js //
-
-// WRITE method
-// Fizzbuzz.prototype.write = function () {
-//   document.getElementById("output").innerHTML = "";
-//   var startVal = Number(document.getElementById("startVal").value);
-//   var endVal = Number(document.getElementById("endVal").value);
-
-//   document.getElementById("start").innerHTML = startVal;
-//   document.getElementById("end").innerHTML = endVal;
-
-//   // createElement
-//   for (var i = 0; i < this.result.length; i++) {
-//     var p = document.createElement("p");
-//     var text = this.result[i];
-//     var att = document.createAttribute("class"); // Add class attribute
-//     p.appendChild(document.createTextNode(text));
-//     att.value = text; // Specify what class name to attach
-//     p.setAttributeNode(att);
-//     document.getElementById("output").appendChild(p);
-//   }
-// };
