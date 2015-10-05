@@ -7,7 +7,7 @@ document.getElementById("submit").addEventListener("click", function(e) {
   e.preventDefault();
   document.getElementById("output").innerHTML = "";
 
-  var fizzbuzz = new FizzBuzz();
+  var fizzbuzz = new FizzBuzz("butt", "hole");
   var startVal = Number(document.getElementById("startVal").value);
   var endVal = Number(document.getElementById("endVal").value);
 
